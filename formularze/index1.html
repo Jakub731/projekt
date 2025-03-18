@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularze</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <button type="submit" name="przycisk" style="font: 12pt Arial; background: red">Przycisk</button>
+    <button type="submit" name="obrazek">
+        <img src="obraz" alt="formularz">
+    </button>
+    <form action="@gmail.com" method="post">
+        <h2>Fromularz kontaktowy:</h2>
+        <p>Podaj swoje nazwisko i imię:</p>
+        <input name="adres" value="" size="30">
+        <h3>Wykształcenie:</h3>
+        <label><input type="radio" value="Podstawowe" name="grupa_opcji" checked>Podstawowe</label><br>
+        <label><input type="radio" value="Średnie" name="grupa_opcji" checked>Podstawowe</label><br>
+        <label><input type="radio" value="Wyższe" name="grupa_opcji" checked>Podstawowe</label><br>
+        <label><input type="checkbox" name="opcje">Zgadzam się na przetwarzanie moich danych osobowych</label>
+        <input type="submit" value="Wyślij">
+        <input type="reset" value="Wyczyść">
+    </form>
+    <form action="http://localhost/skrypt_form.php" method="post">
+        <h3>Dane osobowe</h3>
+        <p>Podaj swoje nazwisko i imię:</p>
+        <input type="dane" value="" size="30">
+        <fieldset>
+            <legend><h4>Wykształcenie:</h4></legend>
+            <label><input type="radio" value="Podstawowe" name="grupa_opcji" checked>Podstawowe</label><br>
+            <label><input type="radio" value="Średnie" name="grupa_opcji" checked>Podstawowe</label><br>
+            <label><input type="radio" value="Wyższe" name="grupa_opcji" checked>Podstawowe</label><br>
+        </fieldset>
+        <label>Pracuję:<input type="checkbox" name="opcje"></label>
+        <input type="submit" value="Wyślij">
+        <input type="reset" value="Wyczyść">
+    </form>
+    <form action="http:localhost/skrypt_form.php" method="post">
+        <h3>Formularz wyboru języka:</h3>
+        <select name="języki" size="5" multiple>
+            <option>Język angielski</option>
+            <option value="Język niemiecki" select="selected">Język niemiecki</option>
+            <option value="Język francuski">Język francuski</option>
+            <option value="Język włoski" select="selected">Język włoski</option>
+            <option value="Język rosyjski">Język rosyjski</option>
+            <option value="Język hiszpański">Język hiszpański</option>
+        </select>
+    </form>
+    <form action="http://localhost/skrypt_form.php" method="post">
+        <h3>Formularz wyboru języka:</h3>
+        <select name="języki" size="10" multiple>
+            <optgroup label="Języki słowiańskie">
+                <option select="selected" value="polski">polski</option>
+                <option value="rosyjski">rosyjski</option>
+                <option value="ukraiński">ukraiński</option>
+            </optgroup>
+            <optgroup label="Języki germańskie">
+                <option value="angielski">angielski</option>
+                <option select="selected" value="niemiecki">niemiecki</option>
+            </optgroup>
+            <optgroup label="Języki romańskie">
+                <option value="francuski">francuski</option>
+                <option value="włoski">włoski</option>
+                <option value="hiszpański">hiszpański</option>
+            </optgroup>
+            <optgroup label="Języki bałtyckie">
+                <option value="litewski">litewski</option>
+                <option value="łotewski">łotewski</option>
+            </optgroup>           
+        </select>
+    </form>
+    <form action="http://localhost/skrypt_form.php" method="post">
+        <h3>Życiorys:</h3>
+        <textarea name="blok" rows="8" cols="40">Wprowadź swój tekst</textarea>
+    </form>
+    <form action="http://localhost/skrypt_form.php" method="post">
+        <h3>Życiorys:</h3>
+        <textarea name="blok" style="width: 250px; height: 100px;">Wprowadź swój tekst</textarea>"
+    </form>
+    <form action="@gmail.com" method="post">
+        <p>Przycisk aktywny &nbsp; &nbsp; &nbsp; &nbsp;  Prycisk nieaktywny</p>
+        <input type="submit" value="Wyślij dane" name="Przycisk1" /> &nbsp; &nbsp; &nbsp; &nbsp; 
+        <input type="submit" value="Wyślij dane" name="Prycisk2" disabled="disabled">
+    </form>
+    <input type="radio" value="Podstawowe" name="grupa_opcji" accesskey="P">Podstawowe [skrót Alt+P]<br>
+    <input type="radio" value="Średnie" name="grupa_opcji" accesskey="S">Średnie [skrót Alt+S]<br>
+    <input type="radio" value="Wyższe" name="grupa_opcji" accesskey="W">Wyższe [skrót Alt+W]<br>
+    <form action="http://localhost/skrypt_form.php" method="post">
+        <h3>Dane osobowe:</h3>
+        <p>Podaj swoje nazwisko i imię:</p>
+        <input name="dane" value="" size="30">
+        <h4>Wykształcenie:</h4>
+        <input list="wyksztalcenie" name="wyksz">
+        <datalist id="wyksztalcenie">
+            <option value="podstawowe"></option>
+            <option value="średnie"></option>
+            <option value="wyższe"></option>
+        </datalist>
+        <input type="submit" value="Wyślij">
+    </form>
+    
+</body>
+</html>
